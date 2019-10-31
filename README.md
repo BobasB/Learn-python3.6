@@ -1,2 +1,5 @@
-# Learn-python3.6
-Learing programs for Python 3.6
+# Learn Python
+## Where I can read basics of Python programming?
+    - here will be link
+---
+## 
