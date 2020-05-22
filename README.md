@@ -1,5 +1,6 @@
-# Overview
 ![](https://github.com/BobasB/learn_python/workflows/CI/badge.svg)
+
+# Overview
 This repository if for fun things with python and other technologies.
 - integrated with GitHub Actions to build and publish Docker Image;
 
