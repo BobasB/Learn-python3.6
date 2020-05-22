@@ -20,6 +20,6 @@ jobs:
           username: bobas
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: bobas/learn_docker
-          tags: latest,$TAG
+          tags: latest,${{ toJson(github.ref) }}
           
       
