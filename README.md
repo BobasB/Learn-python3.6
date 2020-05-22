@@ -1,4 +1,4 @@
-![](https://github.com/BobasB/learn_python/workflows/CI/badge.svg)
+![STATUS](https://github.com/BobasB/learn_python/workflows/CI/badge.svg?branch=master)
 
 # Overview
 This repository if for fun things with python and other technologies.
