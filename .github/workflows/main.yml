@@ -23,7 +23,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Dump GitHub context
       env:
-        GITHUB_CONTEXT: ${{ toJson(github.event_name) }}
+        GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
     
     - name: Build and push Docker images
