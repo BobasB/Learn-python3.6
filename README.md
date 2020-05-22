@@ -20,7 +20,7 @@ make run
 make build-docker
 ```
 ### Result
-![alt text](https://github.com/BobasB/learn_python/blob/master/image/graph.png "Generated Graph")  
+![alt text](https://github.com/BobasB/learn_python/blob/master/images/graph.png "Generated Graph")  
 
 ---
 ### Where I can read basics of Python programming?
