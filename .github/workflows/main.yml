@@ -8,25 +8,18 @@ on:
       - '*'
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Dump GitHub context
-        env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
-        run: echo "$GITHUB_CONTEXT"
-
   docker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Build and push Docker images
         uses: docker/build-push-action@v1.1.0
+        env:
+          TAG: ${{ toJson(github.ref) }}
         with:
           username: bobas
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: bobas/learn_docker
-          tags: latest,test
+          tags: latest,$TAG
           
       
