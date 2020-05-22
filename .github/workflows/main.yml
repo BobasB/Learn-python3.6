@@ -3,9 +3,9 @@
 name: CI
 
 on:
-  release:
-    types:
-      - created
+  push:
+    tags:
+      - '*'
 
 jobs:
   docker:
@@ -18,6 +18,6 @@ jobs:
           username: bobas
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: bobas/learn_docker
-          tags: latest,${{ toJson(github.ref) }}
+          tags: latest,${GITHUB_REF/refs\/tags\//}
           
       
