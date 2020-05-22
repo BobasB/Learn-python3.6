@@ -12,12 +12,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Get the version
+        id: get_version
+        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
       - name: Build and push Docker images
         uses: docker/build-push-action@v1.1.0
         with:
           username: bobas
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: bobas/learn_docker
-          tags: latest,${GITHUB_REF/refs\/tags\//}
+          tags: latest,${{ steps.get_version.outputs.VERSION }}
           
       
