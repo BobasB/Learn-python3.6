@@ -38,6 +38,6 @@ if __name__ == '__main__':
     print("Nodes", G.nodes(), "\nEdges", G.edges.data())
 
     nx.draw(G, with_labels=True)
-    plt.savefig("graph.png")
+    plt.savefig("images/graph.png")
     plt.show()
     print("=== End ===")

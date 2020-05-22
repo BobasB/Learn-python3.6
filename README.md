@@ -19,6 +19,9 @@ make run
 ```bash
 make build-docker
 ```
+### Result
+![alt text](https://github.com/BobasB/learn_python/blob/master/image/graph.png "Generated Graph")  
+
 ---
 ### Where I can read basics of Python programming?
 [Online python course](https://www.tutorialspoint.com/python/index.htm)
